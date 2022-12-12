@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>To do</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="options">
+                <input id="search" type="text" placeholder="Search...">
+
+
+                <div class="sort">
+                    <div class="sort-name">
+                        Sort
+                    </div>
+                    <select id="sortbar" name="sort">
+                        <option disabled selected value></option>
+                        <option value="newest">by newest</option>
+                        <option value="oldest">by oldest</option>
+
+                    </select>
+
+
+                </div>
+            </div>
+
+            <div class="logo">To Do List</div>
+
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="todolist-wrapper">
+                <ul class="todolist">
+                    <li class="todoitem" data-sort="-1">
+                        <input type="checkbox" class="todo" name="todo" value="todo">
+                        <span class="todo-text">delete me</span>
+                        <button class="delete">Delete</button>
+                    </li>
+
+                </ul>
+            </div>
+            <form id="add-task">
+                <input type="text" id="add-newtask" placeholder="Write new task...">
+                <input type="submit" name="Submit" id="submit">
+            </form>
+        </div>
+
+
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
